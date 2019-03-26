@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c14e472d-d5a5-4e85-81de-16976b152677" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://hunicabh.no-ip.org/ServicosWCFHunica/Consultas.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Consultas22.xsd" MetadataType="Schema" ID="02df37c7-21be-48ed-92bd-b40c40e2f80e" SourceId="1" SourceUrl="http://hunicabh.no-ip.org/ServicosWCFHunica/Consultas.svc?xsd=xsd0" />
+    <MetadataFile FileName="Consultas11.wsdl" MetadataType="Wsdl" ID="bc4b7b7f-0322-4d26-a996-529008d1350e" SourceId="1" SourceUrl="http://hunicabh.no-ip.org/ServicosWCFHunica/Consultas.svc?wsdl" />
+    <MetadataFile FileName="Consultas23.xsd" MetadataType="Schema" ID="20e556ad-2105-414e-89b1-97db991abcf7" SourceId="1" SourceUrl="http://hunicabh.no-ip.org/ServicosWCFHunica/Consultas.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

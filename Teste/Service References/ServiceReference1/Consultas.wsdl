@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Consultas" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51615/Consultas.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51615/Consultas.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IConsultas_Rastreamento_InputMessage">
+    <wsdl:part name="parameters" element="tns:Rastreamento" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_Rastreamento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RastreamentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_Embarque_InputMessage">
+    <wsdl:part name="parameters" element="tns:Embarque" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_Embarque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmbarqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_OcorrenciasNovo_InputMessage">
+    <wsdl:part name="parameters" element="tns:OcorrenciasNovo" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_OcorrenciasNovo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OcorrenciasNovoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_ConsultarEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_ConsultarEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_ValidarLoginCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarLoginCliente" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_ValidarLoginCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarLoginClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_RetornarLoginCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetornarLoginCliente" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_RetornarLoginCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetornarLoginClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_ListarCentroCusto_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarCentroCusto" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_ListarCentroCusto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarCentroCustoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_ListarCidade_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarCidade" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_ListarCidade_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarCidadeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_ListarPessoa_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPessoa" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_ListarPessoa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPessoaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_ConsultarFinanceiro_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarFinanceiro" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_ConsultarFinanceiro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarFinanceiroResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IConsultas">
+    <wsdl:operation name="Rastreamento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsultas/Rastreamento" message="tns:IConsultas_Rastreamento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsultas/RastreamentoResponse" message="tns:IConsultas_Rastreamento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Embarque">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsultas/Embarque" message="tns:IConsultas_Embarque_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsultas/EmbarqueResponse" message="tns:IConsultas_Embarque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OcorrenciasNovo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsultas/OcorrenciasNovo" message="tns:IConsultas_OcorrenciasNovo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsultas/OcorrenciasNovoResponse" message="tns:IConsultas_OcorrenciasNovo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEstoque">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsultas/ConsultarEstoque" message="tns:IConsultas_ConsultarEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsultas/ConsultarEstoqueResponse" message="tns:IConsultas_ConsultarEstoque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarLoginCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsultas/ValidarLoginCliente" message="tns:IConsultas_ValidarLoginCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsultas/ValidarLoginClienteResponse" message="tns:IConsultas_ValidarLoginCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetornarLoginCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsultas/RetornarLoginCliente" message="tns:IConsultas_RetornarLoginCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsultas/RetornarLoginClienteResponse" message="tns:IConsultas_RetornarLoginCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarCentroCusto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsultas/ListarCentroCusto" message="tns:IConsultas_ListarCentroCusto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsultas/ListarCentroCustoResponse" message="tns:IConsultas_ListarCentroCusto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarCidade">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsultas/ListarCidade" message="tns:IConsultas_ListarCidade_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsultas/ListarCidadeResponse" message="tns:IConsultas_ListarCidade_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPessoa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsultas/ListarPessoa" message="tns:IConsultas_ListarPessoa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsultas/ListarPessoaResponse" message="tns:IConsultas_ListarPessoa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarFinanceiro">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsultas/ConsultarFinanceiro" message="tns:IConsultas_ConsultarFinanceiro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsultas/ConsultarFinanceiroResponse" message="tns:IConsultas_ConsultarFinanceiro_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IConsultas" type="tns:IConsultas">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Rastreamento">
+      <soap:operation soapAction="http://tempuri.org/IConsultas/Rastreamento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Embarque">
+      <soap:operation soapAction="http://tempuri.org/IConsultas/Embarque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OcorrenciasNovo">
+      <soap:operation soapAction="http://tempuri.org/IConsultas/OcorrenciasNovo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEstoque">
+      <soap:operation soapAction="http://tempuri.org/IConsultas/ConsultarEstoque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarLoginCliente">
+      <soap:operation soapAction="http://tempuri.org/IConsultas/ValidarLoginCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornarLoginCliente">
+      <soap:operation soapAction="http://tempuri.org/IConsultas/RetornarLoginCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarCentroCusto">
+      <soap:operation soapAction="http://tempuri.org/IConsultas/ListarCentroCusto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarCidade">
+      <soap:operation soapAction="http://tempuri.org/IConsultas/ListarCidade" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPessoa">
+      <soap:operation soapAction="http://tempuri.org/IConsultas/ListarPessoa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarFinanceiro">
+      <soap:operation soapAction="http://tempuri.org/IConsultas/ConsultarFinanceiro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Consultas">
+    <wsdl:port name="BasicHttpBinding_IConsultas" binding="tns:BasicHttpBinding_IConsultas">
+      <soap:address location="http://localhost:51615/Consultas.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

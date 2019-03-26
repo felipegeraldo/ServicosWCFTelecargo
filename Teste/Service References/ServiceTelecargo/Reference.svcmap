@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c6f2e0e2-6a36-4c13-bc44-e7dfb93b1b0a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://40.76.47.188/ServicosWCFTelecargo/Consultas.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Consultas1.disco" MetadataType="Disco" ID="a608b05c-ba8a-4900-8922-2f42bf4cc467" SourceId="1" SourceUrl="http://40.76.47.188/ServicosWCFTelecargo/Consultas.svc?disco" />
+    <MetadataFile FileName="Consultas1.wsdl" MetadataType="Wsdl" ID="6dc2bbb1-dd44-494d-a926-99a48aaa23b7" SourceId="1" SourceUrl="http://40.76.47.188/ServicosWCFTelecargo/Consultas.svc?wsdl" />
+    <MetadataFile FileName="Consultas2.xsd" MetadataType="Schema" ID="0c06b81f-0475-4edb-a52a-87b6ac41ff48" SourceId="1" SourceUrl="http://40.76.47.188/ServicosWCFTelecargo/Consultas.svc?xsd=xsd0" />
+    <MetadataFile FileName="Consultas21.xsd" MetadataType="Schema" ID="d937a378-be58-43fb-98ea-6f5b2bcf12e5" SourceId="1" SourceUrl="http://40.76.47.188/ServicosWCFTelecargo/Consultas.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

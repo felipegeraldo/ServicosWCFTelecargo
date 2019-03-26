@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Consultas" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://hunicabh.no-ip.org/ServicosWCFHunica/Consultas.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://hunicabh.no-ip.org/ServicosWCFHunica/Consultas.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IConsultas_Ocorrencias_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ocorrencias" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_Ocorrencias_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OcorrenciasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_OcorrenciasNovo_InputMessage">
+    <wsdl:part name="parameters" element="tns:OcorrenciasNovo" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_OcorrenciasNovo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OcorrenciasNovoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_ConsultarEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_ConsultarEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_ConsultarCTe_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCTe" />
+  </wsdl:message>
+  <wsdl:message name="IConsultas_ConsultarCTe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCTeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IConsultas">
+    <wsdl:operation name="Ocorrencias">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsultas/Ocorrencias" message="tns:IConsultas_Ocorrencias_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsultas/OcorrenciasResponse" message="tns:IConsultas_Ocorrencias_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OcorrenciasNovo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsultas/OcorrenciasNovo" message="tns:IConsultas_OcorrenciasNovo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsultas/OcorrenciasNovoResponse" message="tns:IConsultas_OcorrenciasNovo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEstoque">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsultas/ConsultarEstoque" message="tns:IConsultas_ConsultarEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsultas/ConsultarEstoqueResponse" message="tns:IConsultas_ConsultarEstoque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCTe">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConsultas/ConsultarCTe" message="tns:IConsultas_ConsultarCTe_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConsultas/ConsultarCTeResponse" message="tns:IConsultas_ConsultarCTe_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IConsultas" type="tns:IConsultas">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Ocorrencias">
+      <soap:operation soapAction="http://tempuri.org/IConsultas/Ocorrencias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OcorrenciasNovo">
+      <soap:operation soapAction="http://tempuri.org/IConsultas/OcorrenciasNovo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarEstoque">
+      <soap:operation soapAction="http://tempuri.org/IConsultas/ConsultarEstoque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCTe">
+      <soap:operation soapAction="http://tempuri.org/IConsultas/ConsultarCTe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Consultas">
+    <wsdl:port name="BasicHttpBinding_IConsultas" binding="tns:BasicHttpBinding_IConsultas">
+      <soap:address location="http://hunicabh.no-ip.org/ServicosWCFHunica/Consultas.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

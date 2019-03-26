@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Rastreamento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="senha" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataInicial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataFinal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codigoRemetente" type="xs:int" />
+        <xs:element minOccurs="0" name="codigoDestinatario" type="xs:int" />
+        <xs:element minOccurs="0" name="entregue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroNota" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroConhecimento" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codigoCentroCusto" type="xs:int" />
+        <xs:element minOccurs="0" name="ufOrigem" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cidadeOrigem" type="xs:int" />
+        <xs:element minOccurs="0" name="ufDestino" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cidadeDestino" type="xs:int" />
+        <xs:element minOccurs="0" name="codigoFinanceiro" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RastreamentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RastreamentoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Embarque">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="senha" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataInicial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataFinal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codigoRemetente" type="xs:int" />
+        <xs:element minOccurs="0" name="codigoDestinatario" type="xs:int" />
+        <xs:element minOccurs="0" name="entregue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroNota" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroConhecimento" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codigoCentroCusto" type="xs:int" />
+        <xs:element minOccurs="0" name="ufOrigem" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cidadeOrigem" type="xs:int" />
+        <xs:element minOccurs="0" name="ufDestino" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cidadeDestino" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmbarqueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmbarqueResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DetalheEmbarque">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="senha" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idMovimento" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DetalheEmbarqueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DetalheEmbarqueResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OcorrenciasNovo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoMovimento" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OcorrenciasNovoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OcorrenciasNovoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetornarLoginCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="senha" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetornarLoginClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RetornarLoginClienteResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarCentroCusto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="senha" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codigoRemetente" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarCentroCustoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListarCentroCustoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarCidade">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="senha" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="estado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cidade" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarCidadeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListarCidadeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPessoa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="senha" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="empresa" type="xs:boolean" />
+        <xs:element minOccurs="0" name="cgcCPF" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nome" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codigoPessoa" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPessoaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListarPessoaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarFinanceiro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="senha" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipoDocumento" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroDocumento" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataVencimentoInicial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataVencimentoFinal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataEmissaoInicial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataEmissaoFinal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codigoEmpresaEmissora" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarFinanceiroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarFinanceiroResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

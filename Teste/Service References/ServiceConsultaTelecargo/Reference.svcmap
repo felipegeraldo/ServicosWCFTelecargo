@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2b996d3a-52b6-45a8-9152-34ecd5b89f78" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51615/Consultas.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Consultas.disco" MetadataType="Disco" ID="00b9a2e9-907f-4651-b979-5169465db1ce" SourceId="1" SourceUrl="http://localhost:51615/Consultas.svc?disco" />
+    <MetadataFile FileName="Consultas.xsd" MetadataType="Schema" ID="ce3a9696-bbb1-4b9c-ba85-17b6f75b531e" SourceId="1" SourceUrl="http://localhost:51615/Consultas.svc?xsd=xsd1" />
+    <MetadataFile FileName="Consultas1.xsd" MetadataType="Schema" ID="ee40fe1c-4a49-436b-b64e-7601261c9a2e" SourceId="1" SourceUrl="http://localhost:51615/Consultas.svc?xsd=xsd0" />
+    <MetadataFile FileName="Consultas.wsdl" MetadataType="Wsdl" ID="d9e1dbb3-3de6-47b5-bad6-870f8f2b7d8a" SourceId="1" SourceUrl="http://localhost:51615/Consultas.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

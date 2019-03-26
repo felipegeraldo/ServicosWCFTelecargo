@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Ocorrencias">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cnpjCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codigoDestinatario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numeroNota" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataInicial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dataFinal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="senha" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OcorrenciasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OcorrenciasResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarEstoque">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cnpjCliente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codigoProduto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="descricaoProduto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="senha" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarEstoqueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsultarEstoqueResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
